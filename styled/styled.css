@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/*Las clases se declaran con un PUNTO al principio seguido del nombre que se le quiera dar a la clase y luego se le ponen los {} sin ellos no funciona nada*/
+/*Anotar siempre en CAMELCASE(joroba de camello)*/
+/*Una clase se usa para darle STYLE(estilo) a uno o mas elementos HTML.*/
+/*Las clases se escriben dentro de los elementos HTML*/
+/*Dentro de los {} de la clase se escriben las configuraciones que queramos EJ: COLOR,TAMAÑO,etc...*/
+@import url("https://fonts.googleapis.com/css2? family= Source+Serif+Pro:wght@300 & display=swap");
+body {
+  background-color: black !important;
+  font-family: "Source Serif Pro", serif;
+  margin: 0px;
+}
+
+/* Codigo barra de navegacion */
+.linksDeNavegacion {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  background-color: #858585;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.estiloMenu {
+  color: #E5F876;
+  cursor: pointer !important;
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+.ubicacionLi {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.navegacion {
+  text-decoration: none;
+  color: #E5F876;
+}
+
+.formatoLi {
+  list-style-type: none;
+}
+
+/* fin del codigo de navegacion */
+/* unicio codigo de pagina INDEX */
+.aTitulo {
+  text-decoration: none;
+}
+
+.titulo {
+  color: #E5F876;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.estiloTextoIndex {
+  border-style: solid;
+  color: #E5F876;
+  justify-content: center;
+}
+
+.colorFormaParrafo {
+  text-align: center;
+  color: #E5F876;
+  width: 100%;
+  padding: 5px;
+}
+
+/* fin codigo de pagina INDEX */
+/* inicio codigo pagina ESTADISTICA */
+.imgEstadistica {
+  border: solid #E5F876;
+  border-radius: 8px;
+  height: 280px;
+  width: 320px;
+}
+
+.imgPocho {
+  border: solid #E5F876;
+  border-radius: 8px;
+  height: 280px;
+  width: 320px;
+}
+
+.contenedorImgTituloEstadistica {
+  text-align: center;
+}
+
+.itemsEstadistica {
+  padding-left: 0px;
+}
+
+.TituloEstadistica {
+  color: #E5F876;
+}
+
+/* inicio  codigo pagina JUGADOR */
+.contenedorPrincipal {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.contenedorJugadores {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorJugadoresYTitulos {
+  display: flex;
+}
+
+.contenedorParrafo {
+  height: auto;
+  width: 300px;
+  text-align: center;
+  color: #E5F876;
+  border-style: solid;
+  margin: 20px;
+  font-size: 20px;
+  padding: 0px 10px 0px 10px;
+}
+
+.marcoTituloJugador {
+  justify-content: center;
+  display: flex;
+}
+
+.textoTitulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.tituloJugador {
+  text-align: center;
+  background-color: #E5F876;
+  font-size: larger;
+  border-radius: 16px;
+  width: 200px;
+  margin-top: 30px;
+  color: black;
+  margin-bottom: 30px;
+  height: 62px;
+}
+
+.imgJugador {
+  border-style: solid;
+  border-radius: 5px;
+  color: #E5F876;
+  height: 250px;
+  width: 350px;
+  margin: 10px;
+}
+
+/* cierre jugador */
+/* Inucio desafio */
+.contenedorDesafio {
+  width: auto;
+  color: #E5F876;
+}
+
+.contenedorImgDesafio {
+  margin: 40px 0px 20px 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgDesafio {
+  background-color: antiquewhite;
+  height: 300px;
+  width: 400px;
+  border-style: solid;
+  border-radius: 4px;
+  color: #E5F876;
+}
+
+.textoFinal {
+  display: flex;
+  color: #E5F876;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  font-size: larger;
+}
+
+.contenedorVdDesafio {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-style: solid;
+  color: black;
+}
+
+.videoDesafio {
+  background-color: antiquewhite;
+  height: 300px;
+  width: 400px;
+  border-style: solid;
+  border-radius: 4px;
+  color: #E5F876;
+}
+
+/* Unicio Contratacion*/
+.formulario {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formatoFormulario {
+  width: 400px;
+  padding: 25px;
+}
+
+.formatoFormulario h4 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.controls {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.textBox {
+  width: 100%;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.boton {
+  display: flex;
+  text-align: center;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+#backGroundImg {
+  background-image: url("../img/fondoContratacion.jpg");
+  width: 800px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+/* Pie de Pagina inicio */
+.pieDePagina {
+  display: flex;
+  margin-top: 40px;
+  background-color: #858585;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+.imgDePie {
+  display: flex;
+  height: 40px;
+  width: auto;
+}
+
+.imgYoutube {
+  height: 60px;
+  width: auto;
+}
+
+/* Pie de pagina cierre */
+@media (max-width: 390px) {
+  .contenedorPrincipal {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .contenedorParrafo {
+    padding: 10px;
+    height: unset;
+    width: unset;
+    text-align: center;
+    color: #E5F876;
+    border-style: solid;
+    margin: unset;
+    font-size: 20px;
+  }
+  .estiloMenu {
+    display: block;
+  }
+  .ubicacionLi {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #858585;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .formatoLi {
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+  .navegacion {
+    font-size: 20px;
+  }
+  #menu.estiloMenu.ubicacionLi {
+    left: 0;
+  }
+}
+@media (max-width: 1110px) {
+  .contenedorJugadoresYTitulos {
+    flex-direction: column;
+  }
+  .imgDesafio {
+    width: inherit;
+  }
+}
+
+
+/*# sourceMappingURL=styled.css.map */
